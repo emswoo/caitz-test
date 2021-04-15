@@ -1,0 +1,183 @@
+/* *****************
+*** MUTUAL STYLE ***
+******************** */
+
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+html {
+  max-height: 100%;
+}
+
+body {
+  background-image: url(../images/main-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.salon-logo {
+  margin-top: 20px;
+}
+
+/* NAV MENU */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul.menu {
+  display: flex;
+  list-style: none;
+  flex-flow: row nowrap;
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+}
+
+header ul li {
+  padding: 10px 30px;
+}
+
+nav li:hover {
+  color: white;
+  border-bottom: 2px solid red;
+}
+
+/* CONTENTS */
+.slider {
+  display: table;
+  margin: auto;
+  margin-top: 140px;
+}
+
+.phrase {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.contents-slide {
+  height: 425px;
+}
+
+.sns-box {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-box img {
+  width: 30px;
+  height: auto;
+  margin: 20px;
+}
+
+#bio h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin: 30px;
+}
+
+#bio img {
+  margin: 0 20px 30px 30px;
+  float: left;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#bio p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  opacity: 0.7;
+  text-align: center;
+  padding: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+/* TOP BUTTON */
+.page-top {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+/* *****************
+**** RESPONSIVE ****
+******************** */
+
+@media screen and (max-width: 1600px) {
+  .slider {
+    margin-top: 30px;
+  }
+
+  .slider p {
+    font-size: 50px;
+  }
+
+  .LoveIsInTheAir {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* CONTENTS SP */
+  .slider img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .LoveIsInTheAir {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .nav-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .LoveIsInTheAir {
+    font-size: 40px;
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+  }
+
+  #bio p {
+    margin-left: 30px;
+    width: 300px;
+  }
+}

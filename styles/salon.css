@@ -1,0 +1,128 @@
+/* *****************
+*** MUTUAL STYLE ***
+******************** */
+
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url(../images/0000.jpg);
+  background-attachment: fixed;
+}
+
+/* TITLE */
+.wrap h1 {
+  font-size: 50px;
+  font-family: "Spartan", sans-serif;
+  margin: 90px 0 20px 60px;
+  border-bottom: 2px solid #ebebeb;
+  width: 40%;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid #ebebeb;
+  width: 20%;
+  margin-top: -10px;
+}
+
+/* SALON CONTACT INFO + SALON IMAGE */
+.wrap p {
+  margin: 40px 300px 0 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+.contact-text {
+  display: flex;
+}
+
+/* OPENINGS */
+.openings-box {
+  display: flex;
+  font-size: 20px;
+  font-family: "Spartan", sans-serif;
+  margin-bottom: 100px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+small {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 60px;
+  padding: 30px;
+  opacity: 0.7;
+}
+
+/* TOP BUTTON */
+.page-top {
+  opacity: 0.7;
+}
+
+/* *****************
+**** RESPONSIVE ****
+******************** */
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .contact-text {
+    display: block;
+  }
+
+  .content img {
+    width: 200px;
+    height: 150px;
+    margin-left: 50px;
+  }
+
+  /* TITLE SP */
+  .wrap h1 {
+    font-size: 30px;
+    font-family: "Spartan", sans-serif;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  hr {
+    width: 40%;
+  }
+
+  .contact-text p {
+    margin-right: -10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+
+  .inside p {
+    margin-right: -10px;
+    font-size: 18px;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 601px) {
+  .inside p {
+    font-size: 20px;
+    margin: 50px 90px 20px 50px;
+  }
+}

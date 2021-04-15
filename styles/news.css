@@ -1,0 +1,145 @@
+/* *****************
+*** MUTUAL STYLE ***
+******************** */
+
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+body {
+  background-image: url(../images/0000.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* TITLE */
+h1 {
+  font-size: 50px;
+  font-family: "Spartan", sans-serif;
+  margin: 90px 0 20px 60px;
+  border-bottom: 2px solid #ebebeb;
+  width: 40%;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid #ebebeb;
+  width: 20%;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* PANEL */
+#contentsHeader {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-family: "Spartan", sans-serif;
+  letter-spacing: 1px;
+}
+
+#contentsPanel {
+  display: none;
+  width: 80%;
+  border: 1px solid;
+  margin-left: 50px;
+  border: none;
+}
+
+#contentsPanel h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+#contentsPanel p {
+  font-family: "Inter", sans-serif;
+}
+
+.panel p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.panel span {
+  background: purple;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 3px;
+  margin-left: 16px;
+}
+
+.fs,
+.fs-1 {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  opacity: 0.7;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+/* TOP BUTTON */
+.page-top {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+/* *****************
+**** RESPONSIVE ****
+******************** */
+
+
+@media screen and (max-width: 600px) {
+  .panel {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  hr {
+    width: 40%;
+  }
+
+  .panel p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .panel img {
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+  }
+}

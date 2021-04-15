@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>News | CaiTHair | San Diego Hair Salon</title>
+    <link rel="stylesheet" href="styles/news.css">
+    <link rel="stylesheet" href="styles/basic.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="./">
+        <img class="salon-logo" src="images/logo.png" alt="LOGO" width="80" height="80">
+        </a>
+    <!-- NAV MENU -->
+    <nav class="nav-container">
+        <ul class="menu">
+            <li><a href="salon.html">Salon</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li class="current"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+    
+    <!-- SIDE MENU SP -->
+    <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="salon.html">Salon</a>
+                </li>
+                <li>
+                    <a href="collection.html">Collection</a>
+                </li>
+                <li>
+                    <a href="color.html">Color</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+            </ul>
+    </div>
+    </header>
+
+    <!-- CONTENTS -->
+    <div id="container">
+        <h1>News</h1>
+        <hr>
+        
+        <!-- PANEL -->
+        <div class="panel">
+            <p>January 30th, 2021<span>Event</span><br><br>
+            Fashion show "Globalicious"coming up soon!<br>
+            Get the tickets now!</p>
+            <img class="fs" src="images/fs.jpg" alt="FASHION SHOW SNAP" width="320" height="240">
+            <img class="fs-1" src="images/fs-1.jpg" alt="FASHION SHOW SNAP" width="320" height="240">
+        </div>
+        <div id="contentsHeader" onclick="HeaderClick();">More</div>
+        <div id="contentsPanel">
+            <h2>Globalicious</h2><br>
+            <p>Date : July 20th, 2021<br><br>
+               Time : 6pm - 8pm<br><br>
+               Price : $70.00<br><br>
+               Location : Central Fashion Hall, San Diego CA<br><br>
+               <strong>Tickets are available at our salon!</strong></p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="page-top"><a href="#">
+        <img class="top" src="images/page-top.png" alt="page-top" width="50" height="50">
+        </a></p>
+        <p><small>© All rights reserved by C. Keyser / E. Hayashi</small></p>
+     </footer>
+    </body>
+</html>
